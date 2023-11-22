@@ -1,0 +1,28 @@
+#logoSlider {
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+  }
+  
+  #logoSlider > div {
+    scroll-snap-align: start;
+  }
+
+    .brand {
+    width: 100px;
+    height: 100px;
+    animation: scroll 60s linear infinite;
+  }
+  
+  .slide-track {
+    width: 100%;
+    display: flex;
+    gap: 3em;
+    overflow: hidden;
+  }
+  
+
+  
+  @keyframes scroll {
+    0% {transform: translateX(0);}
+    100% {transform: translatex(-1000%)}
+  }
